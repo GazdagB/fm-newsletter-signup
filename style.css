@@ -18,13 +18,14 @@
 }
 
 body{
-    height: 100vh;
+    height: 98vh;
     background-color: hsl(235, 18%, 26%) !important;
 }
 
 .custom-card{
     background-color: hsl(0, 0%, 100%);
     width: 928px;
+    height: 641px;
     padding: 24px;
     border-radius: 36px;
 }
@@ -65,6 +66,16 @@ input{
     color: hsl(0, 0%, 100%);
     font-weight: bold;
     background:  hsl(234, 29%, 20%);
+    transition: all .3s ease-out;
+}
+
+.btn-custom:hover{
+    background-color: hsl(4, 100%, 67%) ;
+    box-shadow: 0px 16px 32px rgba(255, 97, 85, .5);
+}
+
+.btn-custom:active{
+    transform: scale(.95);
 }
 
 li{
@@ -81,6 +92,10 @@ padding-left: 0 !important;
 
 .input-email{
     margin-bottom: 23px ;
+}
+
+.input-email:focus, .input-email:active,.input-email:hover {
+    border: 1px solid hsl(234, 29%, 20%) !important;
 }
 
 .newsletter-text{
